@@ -17,9 +17,15 @@ Surprise Housing wants to know:
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from linear regression evaluation
-- Conclusion 2 from lasso regression evaluation
-- Conclusion 3 from ridge regression evaluation
+We've identified for our modeling and feature selection techniques, our Ridge model is the most performant on training and test sets. This is contrary to intuition but it does look like our Lasso model did outperform Ridge on the training set. More work is needed to identify an adjustment, but we can see that our Ridge model does perform adequately against our test set. We also see that it performed better than our baseline linear regression model. Although test performance is not extremely high, it would aid any business in determining what price to re-sell a house for.
+
+The most important features an analysis can use are below. I've included the coefficients so that an analysis can know to what extend these features are important compared to one another.
+
+1. GrLivArea: 10094.828816
+2. OverallQual: 9369.226077
+3. 1stFlrSF: 7093.794628
+4. TotalBsmtSF: 6357.671763
+5. Neighborhood_NoRidge: 6019.516204
 
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
